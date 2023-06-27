@@ -1,13 +1,15 @@
 #include <stdio.h>
+/* function with pointer */
+
 int main(void)
 {
-      char c = 'a';
-      int x = 123;
-      float f = 456.789f;
-      char *mycharp = &c;
-      int *myintp = &x;
-      float *myfloatp = &f;
-      printf("The value of a pointed-to char: %c\n", *mycharp);
-      printf("The value of a pointed-to int: %d\n", *myintp);
-      printf("The value of a pointed-to float: %.3f\n", *myfloatp);
+	int x = 12344;
+	printf("The value before the change: %d\n", x);
+
+	int *p = &x;
+	*p = 567;
+	printf("The value after the change: %d\n", x);
+
+
 }
+
