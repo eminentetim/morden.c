@@ -2,8 +2,8 @@
 
 int main(void)
 {
-	char c = 'E';
-	int x = 123;
+	char c = 'f';
+	int x = 13;
 	float f = 465.343f;
 
 	char *mycharp = &c;
